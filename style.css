@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    background-image: url("mountains.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.text1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 8em;
+    letter-spacing: 0.4ch;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(193, 54, 244);
+
+    @media (max-width:800px) {
+        font-size: 2.5em;
+    }
+}
+
+.text2 {
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: rgb(210, 241, 179);
+
+    @media (max-width:800px) {
+        font-size: 1.5em;
+    }
+}
+
+button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 60px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.button1 {
+    margin:20px;
+    background-color: rgba(255, 0, 234, 1);
+    color: aliceblue;
+     align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center; 
+    border:none;
+    transition-property: all;
+    transition-duration: 1s;
+
+}
+button:hover
+{   
+    transform: scale(1.1,1.1);
+    font-size:18px;   
+}
+h3{
+    text-align: center;
+    margin-top:50px;
+    font-size: 40px;
+    font-family: monospace;
+    align-self: center;
+    justify-content: center;
+    
+}
+.news
+{
+    background-color:rgb(225, 225, 217) ;
+    display:flex;
+    width:100vw;
+    row-gap: 45px ;
+    padding-bottom: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+.box{
+   
+    display: flex;
+    margin:5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media (max-width:1500px) {
+        flex-direction: column;
+        align-items:center;
+        width:100%;
+        transform: translate(0.75,0.75);
+    }
+   
+}
+figure{
+    margin:2vw;
+    background-color: white;
+    border:2px solid rgb(224, 219, 219);
+    box-shadow: 3px 3px 3px 3px rgb(170, 177, 180);
+    transition: all;
+    transition-duration: 0.5s;
+    @media (max-width:1500px) {
+        flex-direction: column;
+        align-items:center;
+        width:90%;
+    }
+   
+}
+figure:hover{
+    transform :scale(1.1,1.1);
+}
+img{
+    margin:20px 20px 0px 20px;
+    width:400px;
+    height:250px;
+    @media (max-width:1500px) {
+        align-items: center;
+        width:80%;
+    }
+
+}
+h4{
+    margin-top:10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: monospace;
+    align-self: center;
+    justify-content: center;
+}
+.boxcaption{
+    margin-top:1px;
+    margin-left:30px;
+    margin-bottom:30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #626161;
+}
+.button2{
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border:2px solid rgb(165, 161, 161);
+    transition-property: all;
+    transition-duration:0.5s;
+    font-weight: lighter;
+}
+.button2:hover{
+    background-color:rgb(110, 81, 81);
+    color:whitesmoke;
+}
+.ecotime{
+    background-image: url("ecotime.jpg");
+    background-size: cover;
+    width:100%;
+    height:800px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+.ecotext1
+{
+    color:green;
+    text-align: right;
+    font-size: 150px;
+    margin-right: 40px;
+
+}
+.ecotext2
+{
+    color:green;
+    font-weight: bold;
+    font-size:150px;
+    font-weight:lighter;
+}
+h2{
+    margin-right:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.ecotext3
+{
+    margin-right:30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ecobutton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    align-self:flex-end;
+    margin:30px 30px 0px 0px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border:2px solid green;
+    font-weight: lighter;
+}
+.ecobutton:hover{
+    background-color: green;
+    color:whitesmoke;
+}
+.subscribe
+{
+    background-color: rgb(50, 50, 222);
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin :20px;
+    padding:25px;
+    border:none;
+    border-radius:20px;
+    /* display: flex; */
+}
+input{
+    border:1px solid black;
+    border-radius: 10px;
+    padding :15px 25px 15px 25px;
+    margin-top: 40px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+input:hover{
+    transform:translateX(-20px);
+    border:5px solid orangered;
+}
+.subarea
+{
+    display:flex;
+    justify-content: center;
+}
+.button4{
+    justify-content: center;
+    align-items: center;
+    border:1px solid orange;
+    border-radius:10px;
+    margin-top:40px;
+    background-color: orangered;
+    color: white;
+    transform :translateX(-10px);
+}
+.footer
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0px;
+    padding:25px;
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    @media (max-width:800px) {
+        flex-direction: column;
+    }
+}
+.foot1
+{
+    width:20%;
+}
+.join
+{
+    border-radius:20px;
+    width:80px;
+    display: block;
+    background-color: black;
+    color:white;
+    height:50px;
+    margin-top:25px;
+    margin-bottom: 50px;
+}
+.handle
+{
+    width:50px;
+    height:50px;
+    padding :10px;
+}
+.fa-brands
+{
+    font-size:40px;
+}
+.foot2link
+{
+    margin:50px;
+   
+}
+a
+{
+    text-decoration: none;
+}
+.line{
+width: 96%;
+background-color: rgb(203, 203, 203);
+height: 2px;
+margin: auto;
+margin-top: 20px;
+}
+.lastfooter
+{
+    background-color: blanchedalmond;
+    height:100px;
+    
+   
+}
+.lastlink {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: -20px;
+    @media (max-width:1000px) {
+        flex-direction: column;
+    }
+}
+li{
+    margin-right:40px;
+}
